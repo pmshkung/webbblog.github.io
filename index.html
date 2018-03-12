@@ -229,6 +229,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/pmshkung/webbblog.github.io/2018/03/12/Question1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webb">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/webbblog.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/webbblog.github.io/2018/03/12/Question1/" itemprop="url">Question1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-03-12T13:53:27+08:00">
+                2018-03-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/webbblog.github.io/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">程式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="What-does-the-following-program-print"><a href="#What-does-the-following-program-print" class="headerlink" title="What does the following program print?"></a>What does the following program print?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stidio.h&gt;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    int x = 2, y, z;</span><br><span class="line">	</span><br><span class="line">    x *= (y = z = 5); printf(&quot;%d\n&quot;, x);</span><br><span class="line">	</span><br><span class="line">    z = 3;</span><br><span class="line">    x == (y = z);     printf(&quot;%d\n&quot;, x);</span><br><span class="line">    x = (y == z);     printf(&quot;%d\n&quot;, x);</span><br><span class="line">    x = (y &amp; z);      printf(&quot;%d\n&quot;, x);</span><br><span class="line">    x = (y &amp;&amp; z);     printf(&quot;%d\n&quot;, x);</span><br><span class="line">    y = 4;</span><br><span class="line">    x = (y | z);      printf(&quot;%d\n&quot;, x);</span><br><span class="line">    x = (y || z);     printf(&quot;%d\n&quot;, x);</span><br><span class="line">	</span><br><span class="line">    getchar();</span><br><span class="line">	</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">分析：</span><br><span class="line">x *= (y = z = 5) =&gt; z = 5, y = 5, x = x * y = 10;</span><br><span class="line"></span><br><span class="line">z = 3;</span><br><span class="line">x == (y = z);    =&gt; z = 3, y = 3, x = 10;</span><br><span class="line">x = (y == z);    =&gt; z = 3, y = 3, x = 1;</span><br><span class="line">x = (y &amp; z);     =&gt; z = 3, y = 3, x = 3;</span><br><span class="line">x = (y &amp;&amp; z);    =&gt; z = 3, y = 3, x = 1;</span><br><span class="line">y = 4;</span><br><span class="line">x = (y | z);     =&gt; z = 3, y = 4, x = 7;</span><br><span class="line">x = (y || z);    =&gt; z = 3, y = 4, x = 1;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://github.com/pmshkung/webbblog.github.io/2018/03/09/first/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -248,7 +390,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/webbblog.github.io/2018/03/09/first/" itemprop="url">first</a></h1>
+                <a class="post-title-link" href="/webbblog.github.io/2018/03/09/first/" itemprop="url">error</a></h1>
         
 
         <div class="post-meta">
@@ -322,7 +464,8 @@
       
         
           
-            
+            <p><font face="微软雅黑"><b>#error: </b>在編譯時，輸出錯誤訊息，警告使用者某些錯誤，並且不會真的進行編譯，在巨集處理階段就會停止。</font></p>
+
           
         
       
@@ -531,7 +674,7 @@
               
                 <a href="/webbblog.github.io/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
