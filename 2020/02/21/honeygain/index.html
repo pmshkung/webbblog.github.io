@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-tw">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/webbblog.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/webbblog.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/webbblog.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/webbblog.github.io/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/webbblog.github.io/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/webbblog.github.io/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/webbblog.github.io/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言　　這個網站名稱叫 honeygain，是一個網路賺錢的網站，但是這個網站：不用看影片、不用填問卷，什麼都不用做，只要「掛網」就好。沒錯！不要懷疑，就是只要「掛網」，掛著就能賺錢了！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用手機掛網能賺錢！honeygain 教學">
+<meta property="og:url" content="https://github.com/pmshkung/2020/02/21/honeygain/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言　　這個網站名稱叫 honeygain，是一個網路賺錢的網站，但是這個網站：不用看影片、不用填問卷，什麼都不用做，只要「掛網」就好。沒錯！不要懷疑，就是只要「掛網」，掛著就能賺錢了！">
+<meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="https://github.com/webbblog.github.io/2020/02/21/honeygain/honeygain_icon.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/honeygain_official.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/sign_up.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/account.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/send_email.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/verify_email.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/windows_install.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/five_5USD.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/safe_0.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/safe_1.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/safe_2.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/safe_3.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/safe_4.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_0.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_1.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_2.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_3.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_4.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/phone_install_5.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/dashboard.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/flow.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/integral.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/devices.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/invite.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/get_money.png">
+<meta property="og:image" content="https://github.com/pmshkung/2020/02/21/honeygain/question.png">
+<meta property="og:updated_time" content="2020-02-24T05:47:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用手機掛網能賺錢！honeygain 教學">
+<meta name="twitter:description" content="前言　　這個網站名稱叫 honeygain，是一個網路賺錢的網站，但是這個網站：不用看影片、不用填問卷，什麼都不用做，只要「掛網」就好。沒錯！不要懷疑，就是只要「掛網」，掛著就能賺錢了！">
+<meta name="twitter:image" content="https://github.com/webbblog.github.io/2020/02/21/honeygain/honeygain_icon.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/webbblog.github.io/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/pmshkung/2020/02/21/honeygain/"/>
+
+
+
+
+
+  <title>使用手機掛網能賺錢！honeygain 教學 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/webbblog.github.io/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/webbblog.github.io/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/webbblog.github.io/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            歸檔
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/pmshkung/webbblog.github.io/2020/02/21/honeygain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webb">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/webbblog.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">使用手機掛網能賺錢！honeygain 教學</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2020-02-21T09:38:52+08:00">
+                2020-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/webbblog.github.io/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">程式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <img src="/webbblog.github.io/2020/02/21/honeygain/honeygain_icon.png" title="掛網能賺錢？">
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>　　這個網站名稱叫 honeygain，是一個網路賺錢的網站，但是這個網站：不用看影片、不用填問卷，什麼都不用做，只要「掛網」就好。沒錯！不要懷疑，就是只要「掛網」，掛著就能賺錢了！<br><a id="more"></a></p>
+<h1 id="honeygain-是什麼？"><a href="#honeygain-是什麼？" class="headerlink" title="honeygain 是什麼？"></a>honeygain 是什麼？</h1><p><img src="honeygain_official.png" alt=""><br>　　「<a href="https://www.honeygain.com/" target="_blank" rel="noopener">honeygain</a>」翻成中文的意思是「採集蜂蜜」。而其網站的運作機制的確是很像採集。<br>　　<br>　　這個網站會成立，其實是為了市場商業研究，藉由觀察使用者的「網路流量」，來獲取一些數據資料，並提供公司企業作參考決策。而使用者的獲利來源則為公司企業所提供的研究資金。<br>　　<br>　　目前honeygain網站提供三種版本：　　</p>
+<ul>
+<li><strong>Windows 電腦：</strong><a href="https://download.honeygain.com/windows-app/Honeygain_install" target="_blank" rel="noopener"><strong>Windows</strong></a></li>
+<li><strong>MacOS 電腦：</strong><a href="https://apps.apple.com/us/app/honeygain-make-money-online/id1479049768" target="_blank" rel="noopener"><strong>MacOS</strong></a></li>
+<li><strong>手機：<a href="https://honeygain.en.aptoide.com/" target="_blank" rel="noopener">Android系統</a></strong></li>
+</ul>
+<h1 id="honeygain如何使用"><a href="#honeygain如何使用" class="headerlink" title="honeygain如何使用"></a>honeygain如何使用</h1><p>　　<strong>(接下來的文章會以電腦版示範為主，電腦版與手機版功能都一樣，對照著操作不會太難，如果有問題歡迎來信提問。)</strong></p>
+<p><strong>步驟1</strong>：註冊新帳號<br>　　首先我們點擊此<a href="https://r.honeygain.money/MINTRDD1" target="_blank" rel="noopener">連結</a>。進入此網頁之後，如下圖所示。點擊紅色框框進行註冊。<br><img src="sign_up.png" alt=""><br>　　點擊後，出現下圖，依照要求填入註冊資訊。在註冊完成之後，即會獲得5美元(如紅色框框所示)。<br><img src="account.png" alt=""><br>　　依照要求，填入</p>
+<ul>
+<li>Email</li>
+<li>登入密碼</li>
+</ul>
+<p>　　Email我是都以Google的gmail為主。輸入完成之後，點擊藍色框框，進入下一下個步驟。</p>
+<p><strong>步驟2</strong>：信箱認證<br>　　進入步驟1所填的Email收信，即可以看到honeygain寄來的認證信。如下圖所示。<br><img src="send_email.png" alt=""><br>　　進入信箱，點擊「Verify email」紅色框框，認證就完成了。<br><img src="verify_email.png" alt=""></p>
+<p><strong>步驗3</strong>：安裝軟體</p>
+<ul>
+<li><p>Windows 電腦<br>　　點擊此「<a href="https://download.honeygain.com/windows-app/honeygain_setup.exe" target="_blank" rel="noopener">連結</a>」，開始下載honeygain 軟體。下載安裝完成之後，開啟honeygain 即可以在電腦的右下角選單看到你的蜜蜂圖示，此時登入你剛剛申請的honeykgain帳號，即可以開始你的掛網之旅了。<br><img src="windows_install.png" alt=""><br>　　登入之後，即可以看到已經有5美元入帳。<br><img src="five_5USD.png" alt=""></p>
+</li>
+<li><p>Android 手機(Android 版本為9)<br>　　以Nokia 3.1手機為例。我們需要使用Chrome下載App Apk檔案安裝，因此需要開啟App安裝權限。以下說明如何開啟安全性權限。<br>　　<strong>選擇手機設定，並進入「應用程式和通知」。</strong><br><img src="safe_0.png" alt=""><br>　　<strong>往下滑，選擇「特殊應用程式存取權」。</strong><br><img src="safe_1.png" alt=""><br>　　<strong>選擇「安裝不明應用程式」。</strong><br><img src="safe_2.png" alt=""><br>　　<strong>選擇「Chrome」。</strong><br><img src="safe_3.png" alt=""><br>　　<strong>開啟「充許這個來源的應用程式」。</strong><br><img src="safe_4.png" alt=""></p>
+</li>
+</ul>
+<p>　　使用「Chrome」開啟此「<a href="https://www.honeygain.com/download" target="_blank" rel="noopener">連結</a>」。選擇Android並開始下載。下載完成之後，點擊進行安裝。如果不能安裝請檢查「Chrome」的App安裝權限是否已經開啟。<br><img src="phone_install_0.png" alt=""><br>　　安裝完成之後，點擊Honeygain開啟。點擊同意進入下一步。<br><img src="phone_install_1.png" alt=""><br>　　點擊跳過介紹，進入下一步。<br><img src="phone_install_2.png" alt=""><br>　　進入登入畫面，登入你剛剛申請的honeykgain帳號，進入下一步。<br><img src="phone_install_3.png" alt=""><br>　　登入之後，「User mobile data」選擇「Yes」，「Allow usage on battery」選擇「Yes」，然後選「Done」。<br><img src="phone_install_4.png" alt=""><br>　　完成之後，可以看到Dashboard上面顯示已經有5美元，現在開始可以使用你手機進行掛網之旅了<br><img src="phone_install_5.png" alt=""></p>
+<h1 id="honeygain功能介紹"><a href="#honeygain功能介紹" class="headerlink" title="honeygain功能介紹"></a>honeygain功能介紹</h1><p>　　<strong>(honeygain的Dashboard，電腦版與手機版功能都一樣，對照著操作不會太難，因此這裡以電腦版操作為主，如果有問題歡迎來信<a href="mailto:mintrabbitplus@gmail.com" target="_blank" rel="noopener">提問</a>。)</strong></p>
+<ul>
+<li>Dashboard 主畫面<br><img src="dashboard.png" alt=""></li>
+<li>流量<br>可以看到過去 30 天網站觀察的流量。<br><img src="flow.png" alt=""></li>
+<li>積分<br>你掛網得到的積分(包含電腦掛網和手機掛網)。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">左上圖形：計時器，等蜂巢滿了就會將當日積分轉換為整體積分。</span><br><span class="line">右上數字：當日積分(每日0：00固定會將當日積分轉至整體積分)。</span><br><span class="line">中下數字：整體積分。</span><br><span class="line">中下條狀圖：代表你距離最低出金額20美元(20000積分)還有多少距離。</span><br><span class="line">流量計算：1GB的流量，等於有0.1美元，也等於有100積分。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="integral.png" alt=""></p>
+<ul>
+<li>裝置<br>裝置的部分可以連結無數個(只要從那台裝置登入就直接連結了)，連結越多，賺的速度越快。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">honeygain是以IP位址追蹤，1個IP位址最少要有一個設備，最多5個。</span><br><span class="line">如果有50台裝置要連結，那就需要有至少10個IP位址。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="devices.png" alt=""></p>
+<ul>
+<li>邀請<br>這部分就是每個賺錢平台都會有的邀請功能，你每邀請一位朋友，對方每日流量的 10% 會當作你的獎勵。<br><img src="invite.png" alt=""></li>
+</ul>
+<h1 id="honeygain如何出金"><a href="#honeygain如何出金" class="headerlink" title="honeygain如何出金"></a>honeygain如何出金</h1><p><img src="get_money.png" alt=""><br>　　<strong>(當honeygain累積到20美元(20000積分)，即可以將累積的金額轉到Paypal平台上。可以參考此<a href="https://easytorich.com/honeygain-introduction/#Honeygain-4" target="_blank" rel="noopener">網站</a>說明)</strong>
+　　</p>
+<h1 id="honeygain常見問題"><a href="#honeygain常見問題" class="headerlink" title="honeygain常見問題"></a>honeygain常見問題</h1><p><img src="question.png" alt=""></p>
+<ul>
+<li><p>honeygain只要有網路就可以掛嗎？<br>回答：行動網路或者 WiFi都可以。</p>
+</li>
+<li><p>honeygain一天可以掛多少流量？<br>回答：根據每個人的網路速度不同而訂，一個裝置最多可以掛到15GB(1500積分)。</p>
+</li>
+<li><p>有辦法讓收入增加更多嗎？<br>回答：有，連結更多裝置同時掛網，官網表示一個IP位址不超過3個是最好的(最多5個)。</p>
+</li>
+<li><p>如何連結更多裝置？<br>回答：只要在欲連結的裝置上開啟網頁(或下載APP)登入帳號即可，一個帳號可以連很多個裝置。</p>
+</li>
+<li><p>要怎麼關閉Honeygain？<br>回答：手機版的直接滑掉。電腦版的到右下角對蜜蜂圖示按右鍵選單中的「Quit」關掉。</p>
+</li>
+<li><p>honeygain的積分會過期嗎？<br>回答：會，如果六個月內完全沒有繼續掛網就會過期。</p>
+</li>
+<li><p>出金方式有哪些？<br>回答：目前出金方式只支援Paypal，未來還會陸續開發其餘出金方式。</p>
+</li>
+<li><p>如果用VPN，honeygain會運作嗎？<br>回答：不會，honeygain不支援VPN。</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/webbblog.github.io/2020/01/13/app-policies/" rel="next" title="App 使用條款/隱私權政策">
+                <i class="fa fa-chevron-left"></i> App 使用條款/隱私權政策
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Webb</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/webbblog.github.io/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">文章</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分類</span>
+                
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#honeygain-是什麼？"><span class="nav-number">2.</span> <span class="nav-text">honeygain 是什麼？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#honeygain如何使用"><span class="nav-number">3.</span> <span class="nav-text">honeygain如何使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#honeygain功能介紹"><span class="nav-number">4.</span> <span class="nav-text">honeygain功能介紹</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#honeygain如何出金"><span class="nav-number">5.</span> <span class="nav-text">honeygain如何出金</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#honeygain常見問題"><span class="nav-number">6.</span> <span class="nav-text">honeygain常見問題</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Webb</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 強力驅動</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主題 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/webbblog.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/webbblog.github.io/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/webbblog.github.io/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/webbblog.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/webbblog.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/webbblog.github.io/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
